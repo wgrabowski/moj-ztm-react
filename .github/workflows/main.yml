@@ -27,5 +27,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: yarn
-      - run: npx eslint --if-present
+      - run: npx eslint
       - run: npx tsc --noEmit
