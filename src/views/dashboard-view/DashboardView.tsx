@@ -1,1 +1,4 @@
-export const DashboardView = () => <div>Dashboard view</div>;
+
+export const DashboardView = () => {
+	return <div>Dashboard view</div>;
+};

@@ -1,7 +1,8 @@
 import './Root.css';
 import { Link, Outlet } from 'react-router-dom';
-import { ReactNode } from 'react';
 import styled from 'styled-components';
+import { store } from './data-access/store';
+import { Provider } from 'react-redux';
 
 const SettingsLink = styled.div`
 	position: fixed;
@@ -15,12 +16,14 @@ const SettingsLink = styled.div`
 	}
 `;
 const Root = () => (
-	<main>
-		<SettingsLink>
-			<Link to="settings">&#x2699;&#xFE0F;</Link>
-		</SettingsLink>
-		<Outlet />
-	</main>
+	<Provider store={store}>
+		<main>
+			<SettingsLink>
+				<Link to="settings">&#x2699;&#xFE0F;</Link>
+			</SettingsLink>
+			<Outlet />
+		</main>
+	</Provider>
 );
 
 export default Root;
