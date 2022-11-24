@@ -1,0 +1,15 @@
+name: verify
+on: [pull_request, push]
+jobs:
+  audit:
+    name: npm audit
+    run: npm audit
+		run-on: ubuntu-latest
+  lint:
+    name: lint
+    run: npx eslint
+		run-on: ubuntu-latest
+  verify_typescript:
+    name: compile
+    run: npx tsc --noEmit
+		run-on: ubuntu-latest
