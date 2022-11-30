@@ -12,12 +12,10 @@ function getTimeFromNow(time: string) {
 		(then.getTime() - now) / 60000,
 		'minute'
 	);
+
 	return `${value} m`;
 }
 
 export const DepartureTime = ({ estimatedTime }: DepartureTimeProps) => {
-	let departureTime: string;
-	departureTime = getTimeFromNow(estimatedTime);
-
-	return <Fragment>{departureTime}</Fragment>;
+	return <Fragment>{getTimeFromNow(estimatedTime)}</Fragment>;
 };

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Clock } from '../../ui/clock/Clock';
+import { Clock } from '../../dashboard/ui/clock/Clock';
 import { DepartureTime } from './departure-time/DepartureTime';
 
 export interface Departure {
@@ -42,17 +42,19 @@ export const Departures = ({
 			<span>Nr</span>
 			<span>Kierunek</span>
 			<span>Odjazd</span>
-			{(limit ? departures.slice(0, limit) : departures).map((departure) => {
-				return (
-					<>
-						<span>{departure.routeId}</span>
-						<span>{departure.headsign}</span>
-						<span>
-							<DepartureTime estimatedTime={departure.estimatedTime} />
-						</span>
-					</>
-				);
-			})}
+			{(Number.isInteger(limit) ? departures.slice(0, limit) : departures).map(
+				(departure) => {
+					return (
+						<>
+							<span>{departure.routeId}</span>
+							<span>{departure.headsign}</span>
+							<span>
+								<DepartureTime estimatedTime={departure.estimatedTime} />
+							</span>
+						</>
+					);
+				}
+			)}
 		</Grid>
 	</section>
 );
