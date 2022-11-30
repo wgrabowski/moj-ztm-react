@@ -1,3 +1,5 @@
+import { WidgetType } from '../settings/model';
+
 export interface Stop {
 	stopId: number;
 	stopCode: string;
@@ -45,6 +47,12 @@ export interface Departure {
 export interface DepartureWithStopId extends Departure {
 	stopId: string;
 }
+
 export type UpdatedCollection<T> = {
 	lastUpdated: UTCDateString;
 } & { [key: string]: T[] };
+
+export interface WidgetConfig<T = any> {
+	type: WidgetType;
+	data: T;
+}

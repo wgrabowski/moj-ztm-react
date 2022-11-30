@@ -1,10 +1,10 @@
-import { Departure, Departures, DeparturesProps } from './Departures';
 import { ComponentMeta } from '@storybook/react';
+import { Departure, Departures, DeparturesProps } from './Departures';
 import { mockDepartures } from './mockdata';
 
 export default {
 	component: Departures,
-	title: 'dashboard/widgets/Departures',
+	title: 'widgets/Departures',
 } as ComponentMeta<typeof Departures>;
 const mockData: Departure[] = mockDepartures;
 
