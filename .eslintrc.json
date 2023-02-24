@@ -1,13 +1,37 @@
 {
-  "extends": ["plugin:@nrwl/nx/react", "./.eslintrc.base.json"],
-  "ignorePatterns": ["!**/*"],
+  "extends": [
+    "plugin:@nrwl/nx/react",
+    "./.eslintrc.base.json",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:jsx-a11y/strict"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "unused-imports",
+    "cypress",
+    "jsx-a11y",
+    "eslint-plugin-no-inline-styles"
+  ],
+  "ignorePatterns": [
+    "!**/*"
+  ],
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
       "rules": {}
     },
     {
-      "files": ["*.js", "*.jsx"],
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
       "rules": {}
     }
   ]
