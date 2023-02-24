@@ -1,0 +1,24 @@
+{
+  "name": "settings-settings-feature",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "settings/settings-feature/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["settings/settings-feature/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": ["coverage/settings/settings-feature"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/settings/settings-feature"
+      }
+    }
+  }
+}

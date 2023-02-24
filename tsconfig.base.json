@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@moj-ztm/dashboard/dashboard-feature": [
+        "dashboard/dashboard-feature/src/index.ts"
+      ],
+      "@moj-ztm/settings/settings-feature": [
+        "settings/settings-feature/src/index.ts"
+      ],
       "@moj-ztm/ztm-api": ["ztm-api/src/index.ts"]
     }
   },

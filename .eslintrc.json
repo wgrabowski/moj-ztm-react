@@ -19,6 +19,9 @@
   "ignorePatterns": [
     "!**/*"
   ],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  },
   "overrides": [
     {
       "files": [

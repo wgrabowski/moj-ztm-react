@@ -1,12 +1,13 @@
-import { Provider } from 'react-redux';
-import { store } from '@moj-ztm/ztm-api';
-
+import { Routes, Route } from 'react-router-dom';
+import { Dashboard } from '@moj-ztm/dashboard/dashboard-feature';
+import { Settings } from '@moj-ztm/settings/settings-feature';
 
 export function App() {
   return (
-    <Provider store={store}>
-      hello world
-    </Provider>
+    <Routes>
+      <Route path="/" element={<Dashboard/>}/>
+      <Route path="/settings" element={<Settings/>}/>
+    </Routes>
   );
 }
 
