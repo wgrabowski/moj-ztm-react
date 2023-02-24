@@ -21,6 +21,7 @@
       "@moj-ztm/settings/settings-feature": [
         "settings/settings-feature/src/index.ts"
       ],
+      "@moj-ztm/ui/shared/mui": ["ui/shared/mui/src/index.ts"],
       "@moj-ztm/ztm-api": ["ztm-api/src/index.ts"]
     }
   },

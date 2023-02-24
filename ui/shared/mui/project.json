@@ -1,0 +1,24 @@
+{
+  "name": "ui-shared-mui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui/shared/mui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui/shared/mui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": ["coverage/ui/shared/mui"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../../coverage/ui/shared/mui"
+      }
+    }
+  }
+}
