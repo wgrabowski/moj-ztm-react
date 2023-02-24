@@ -1,16 +1,12 @@
-import styled from 'styled-components';
+import { Provider } from 'react-redux';
+import { store } from '@moj-ztm/ztm-api';
 
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
 
 export function App() {
   return (
-    <StyledApp>
-      <NxWelcome title="moj-ztm" />
-    </StyledApp>
+    <Provider store={store}>
+      hello world
+    </Provider>
   );
 }
 
