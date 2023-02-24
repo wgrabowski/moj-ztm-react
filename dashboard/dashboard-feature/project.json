@@ -1,0 +1,24 @@
+{
+  "name": "dashboard-dashboard-feature",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "dashboard/dashboard-feature/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["dashboard/dashboard-feature/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": ["coverage/dashboard/dashboard-feature"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/dashboard/dashboard-feature"
+      }
+    }
+  }
+}
