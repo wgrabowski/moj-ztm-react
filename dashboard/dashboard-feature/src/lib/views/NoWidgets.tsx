@@ -1,6 +1,5 @@
-import Box from '@mui/material/Box';
-import { Button, SvgIcon, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import { Box, Button, SvgIcon, Typography } from '@mui/material';
 
 export const NoWidgets = () => {
   return (

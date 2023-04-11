@@ -30,7 +30,7 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/widgets/data-access"],
+      "outputs": ["{workspaceRoot}/coverage/widgets/data-access"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/widgets/data-access"

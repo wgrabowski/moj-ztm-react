@@ -14,7 +14,7 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/dashboard/dashboard-feature"],
+      "outputs": ["{workspaceRoot}/coverage/dashboard/dashboard-feature"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/dashboard/dashboard-feature"

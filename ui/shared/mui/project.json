@@ -14,7 +14,7 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/ui/shared/mui"],
+      "outputs": ["{workspaceRoot}/coverage/ui/shared/mui"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../coverage/ui/shared/mui"

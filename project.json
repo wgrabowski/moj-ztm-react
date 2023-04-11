@@ -54,7 +54,7 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/moj-ztm"],
+      "outputs": ["{projectRoot}/coverage/moj-ztm"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "coverage/moj-ztm"
