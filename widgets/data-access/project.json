@@ -1,7 +1,7 @@
 {
-  "name": "ztm-api",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "ztm-api/src",
+  "name": "widgets-data-access",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "widgets/data-access/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,7 +9,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["ztm-api/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["widgets/data-access/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "build": {
@@ -17,7 +17,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/ztm-api"
+        "outputPath": "dist/widgets/data-access"
       },
       "configurations": {
         "development": {
@@ -30,10 +30,10 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["{workspaceRoot}/coverage/ztm-api"],
+      "outputs": ["{workspaceRoot}/coverage/widgets/data-access"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../coverage/ztm-api"
+        "reportsDirectory": "../../coverage/widgets/data-access"
       }
     }
   }
