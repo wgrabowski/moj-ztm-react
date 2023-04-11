@@ -19,6 +19,7 @@
         "dashboard/dashboard-feature/src/index.ts"
       ],
       "@moj-ztm/ui/shared/mui": ["ui/shared/mui/src/index.ts"],
+      "@moj-ztm/widgets/data-access": ["widgets/data-access/src/index.ts"],
       "@moj-ztm/ztm-api": ["ztm-api/src/index.ts"]
     }
   },
